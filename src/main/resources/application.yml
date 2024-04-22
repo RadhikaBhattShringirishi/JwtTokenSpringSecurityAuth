@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: SpringJwtProject19
+  datasource:
+    password: root
+    url: jdbc:postgresql://localhost:5432/springjwttokendb
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+logging:
+  level:
+    org.springframework.security: TRACE
